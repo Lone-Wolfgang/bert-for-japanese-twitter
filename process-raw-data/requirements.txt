@@ -1,0 +1,4 @@
+pandas==2.0.3
+process_twarc==0.12.4
+pytz==2023.3
+tqdm==4.65.0
