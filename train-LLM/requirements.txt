@@ -1,6 +1,0 @@
-datasets==2.13.1
-pandas==2.0.3
-process_twarc==0.12.4
-pyarrow==12.0.1
-torch==2.0.1
-transformers==4.30.2
