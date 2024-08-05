@@ -1,2 +1,5 @@
-# bert-for-japanese-twitter
-A collection of tools useful for transforming raw data from Twarc2 into training data for masked language modeling.
+# BERT for Japanese Twitter
+
+This repository describes the development of BERT for Japanese Twitter, a pretrained model specialized for Japanese SNS tasks.
+
+The models are available on [Transformers](https://github.com/huggingface/transformers) by Hugging Face.
