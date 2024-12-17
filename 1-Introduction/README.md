@@ -15,8 +15,9 @@ This project used the Twitter API to access tens of millions of tweets for train
 
 <div align="center">
   <img src="images/positive-tweet.png" alt="Alt text" width="400">
-Positive tweets express emotions such as joy, satisfaction, optimism, or anticipation. Mixed emotions are considered positive if the positive emotions are dominant.
 </div>
+
+Positive tweets express emotions such as joy, satisfaction, optimism, or anticipation. Mixed emotions are considered positive if the positive emotions are dominant.
 
 ![Example of a Negative Tweet](images/negative-tweet.png)
 
