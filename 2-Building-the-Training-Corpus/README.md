@@ -25,11 +25,30 @@ To distribute the quota over the desired timespan, a more specific operator was 
 
 ## Corpus Analysis of Time and Place
 
-<div align="justify">
+<div align="center">
+  <img src="images/month.png" alt="Distribution of the Twitter Corpus by Month" width="400">
+  <p><em>Sampling proceeded from June 2022 to May 2023 and included significant contributions from almost every day of this window. The low volume of tweets collected in November 2022 reflects a learning curve in using the API.</em></p>
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="images/day.png" alt="Distribution of the Twitter Corpus by Day" width="200">
+      </td>
+      <td>
+        <img src="images/hour.png" alt="Distribution of the Twitter Corpus by Hour" width="200">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <p><em>The hourly plot (left) shows consistent activity from 7:00-21:00 JCT that wanes and waxes across nighttime hours. The daily plot (right) shows activity over weekdays with a small boost on the weekend. These observations align well with the behavior expected from users living in Japan, validating the temporal representation of the corpus procured.</em></p>
+      </td>
+    </tr>
+  </table>
+</div>
  
-Figure 4.1 Distribution of the Twitter Corpus by Month
- 
-Sampling proceeded from June 2022 to May 2023 and included significant contributions from almost every day of this window. The low volume of tweets collected in November 2022 reflects a learning curve in using the API.
+
 Figure 4.2 Distribution of the Twitter Corpus by Day and Hour
   
 The hourly plot (left) shows consistent activity from 7:00-21:00 JCT that wanes and waxes across nighttime hours. The daily plot (right) shows activity over weekdays with a small boost on the weekend. These observations align well with the behavior expected from users living in Japan, validating the temporal representation of the corpus procured.
