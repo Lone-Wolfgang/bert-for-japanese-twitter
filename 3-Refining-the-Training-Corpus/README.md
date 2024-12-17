@@ -47,7 +47,7 @@ Deduplication was applied to both corpora under various configurations. This app
 </div>
 
 <div align="center">
-  <img src="images/deduplication-scatter.png" alt="Scatterplot of the Deduplicator Tuning Procedure" width="400">
+  <img src="images/deduplication-scatter.png" alt="Scatterplot of the Deduplicator Tuning Procedure" width="600">
   <p><em>This configuration struck a favorable balance between thorough deduplication of the target corpus and minimal impact on the control group. It performed better than the next three configurations, which resulted in a higher loss of control data.</em></p>
 </div>
  
@@ -69,12 +69,12 @@ It was assumed that high-activity users that contributed hundreds or thousands o
 </div>
 
 <div align="center">
-  <img src="images/duplicate-ratio-by-users.png" alt="Duplicate Ratios of Corpus Segmented by User Contribution Level" width="400">
+  <img src="images/duplicate-ratio-by-users.png" alt="Duplicate Ratios of Corpus Segmented by User Contribution Level" width="600">
   <p><em>Within the normal range, there was no relationship between contribution size and duplicate ratio. Deduplication reduced the corpus volume by approximately half across contribution levels. However, the 3% of the corpus contributed by ‘Very High’ activity users was reduced by 75%. Therefore, those users with outlying zone of ‘Very High’ activity do seem to be more likely to produce repetitive text. These users are examined more closely in the analysis that follows.</em></p>
 </div>
 
 <div align="center">
-  <img src="images/duplicate-ratio-by-users.png" alt="Histogram of ‘Very High’ Contributors Grouped by Duplicate Ratio" width="400">
+  <img src="images/duplicate-ratio-by-users.png" alt="Histogram of ‘Very High’ Contributors Grouped by Duplicate Ratio" width="600">
   <p><em>Most of the ‘Very High’ activity users produced more than 80% duplicate tweets. Therefore, the deduplication procedure did have a limited balancing effect on user contributions. However, a few of these outlier uses returned duplicate ratios that were well below average.</em></p>
 </div>
 
@@ -90,12 +90,12 @@ Deduplication partly balanced the corpus by reducing the influence of outlier us
 </div>
 
 <div align="center">
-  <img src="images/med-duplicate-text-sample.png" alt="Text Sample from User with 57% Duplicate Ratio" width="400">
+  <img src="images/med-duplicate-text-sample.png" alt="Text Sample from User with 57% Duplicate Ratio" width="600">
   <p><em>This is the Twitter corpus' largest contributor, and they had a 57% duplicate ratio. They posted 45k tweets at a rate of 173 tweets per day, usually ending posts with "❤️(笑)". They employ unconventional posting styles, such as 'daisy-chaining' to bypass character limits. Chains are disrupted during preprocessing. Within a model’s capabilities, these tweets are difficult to interpret because they lack context. Nevertheless, this user makes a valuable contribution by discussing a variety of topics.</em></p>
 </div>
 
 <div align="center">
-  <img src="images/low-duplicate-text-sample.png" alt="Text Sample from User with 17% Duplicate Ratio" width="400">
+  <img src="images/low-duplicate-text-sample.png" alt="Text Sample from User with 17% Duplicate Ratio" width="600">
   <p><em>This user, posting 12k tweets at 45 tweets per day, shows no signs of automated text generation. Their contributions are linguistically varied, enhancing the corpus diversity.</em></p>
 </div>
 
@@ -109,7 +109,7 @@ The review of user samples indicated that deduplication achieved its intended pu
 </div>
 
 <div align="center">
-  <img src="images/corpora-by-tweet-volume.png" alt="Histogram of Three training corpora" width="400">
+  <img src="images/corpora-by-tweet-volume.png" alt="Histogram of Three training corpora" width="600">
 </div>
 
 <div align="center">
@@ -128,7 +128,7 @@ Deduplication cut the corpus size from 60 million to 27 million tweets. User bal
 Comparison of the Raw and Deduplicated corpora indicates that deduplication maintained a high level of linguistic diversity. Despite being less than half the size, the Deduplicated corpus retains approximately 75% of the unique n-grams from the Raw corpus.  Conversely, the unique n-grams drop significantly from the Deduplicated to the Balanced corpus.
 
 <div align="center">
-  <img src="images/table-of-ngrams.png" alt="Analysis of N-Grams across Raw and Refined Corpora" width="400">
+  <img src="images/table-of-ngrams.png" alt="Analysis of N-Grams across Raw and Refined Corpora" width="600">
   <p><em>MeCab was used to tokenize the corpora (Kudo et al., 2004). Analysis of n-grams was facilitated by the Python library, NLTK.</em></p>
 </div>
 
@@ -139,7 +139,7 @@ The ratio of unique to total n-grams is the highest in the Balanced corpus. Howe
 </div>
 
 <div align="center">
-  <img src="images/diversity-of-ngrams.png" alt="Diversity of N-Grams across Raw and Refined Corpora" width="400">
+  <img src="images/diversity-of-ngrams.png" alt="Diversity of N-Grams across Raw and Refined Corpora" width="600">
   <p><em>This analysis shows that diversity of n-grams increases slightly from the Raw to the Deduplicated corpus. However, there is no change between the Deduplicated and Balanced corpora.</em></p>
 </div>
 
@@ -157,17 +157,17 @@ The final phase of content analysis focuses on the most common n-grams, hashtags
 </div>
 
 <div align="center">
-  <img src="images/high-freq-4grams.png" alt="Top Frequency 4-Grams across Raw and Refined Corpora" width="400">
+  <img src="images/high-freq-4grams.png" alt="Top Frequency 4-Grams across Raw and Refined Corpora" width="600">
   <p><em>Because of the prevalence of Swarm tweets, ‘I’m at’ is the top ranking 4-grams. The problematic entries highlighted in red dropout and are appropriately replaced with phatic language, such as “お 願い し ます”, and grammatical phrases, such as ”し まし た 。”.</em></p>
 </div>
 
 <div align="center">
-  <img src="images/high-freq-4grams.png" alt="Top Frequency Hashtags across Raw and Refined Corpora" width="400">
+  <img src="images/high-freq-4grams.png" alt="Top Frequency Hashtags across Raw and Refined Corpora" width="600">
   <p><em>The top frequency hashtags do not change as dramatically as the other categories. “#17LIVE” is a streaming website that advertises on Twitter aggressively. The other two hashtags are engagement seeking. The most frequent type of tag are place names, which likely resulted from the sampling method.</em></p>
 </div>
 
 <div align="center">
-  <img src="images/high-freq-4grams.png" alt="Top Frequency Mentioned Users across Raw and Refined Corpora" width="400">
+  <img src="images/high-freq-4grams.png" alt="Top Frequency Mentioned Users across Raw and Refined Corpora" width="600">
   <p><em>Japanese transportation entities, such as JR East, utilize Twitter for public outreach. Three of these entities rank among the most mentioned users, and their tweets tend to be highly repetitive. The other problematic accounts are tied to businesses. After refinement, the most frequently mentioned users shifted to include news sources like "@YahooNewsTopics," politicians such as "@Kishida230," and lesser-known individuals like "@souhakurumi" who are primarily recognized through their Twitter presence.</em></p>
 </div>
 
