@@ -31,8 +31,8 @@ To distribute the quota over the desired timespan, a more specific operator was 
 </div>
 
 <div align="center">
-  <img src="images/day.png" alt="Distribution of the Twitter Corpus by Day" width="600">
-  <img src="images/hour.png" alt="Distribution of the Twitter Corpus by Hour" width="600">
+  <img src="images/day.png" alt="Distribution of the Twitter Corpus by Day" width="400">
+  <img src="images/hour.png" alt="Distribution of the Twitter Corpus by Hour" width="400">
   <p><em>The hourly plot (left) shows consistent activity from 7:00-21:00 JCT that wanes and waxes across nighttime hours. The daily plot (right) shows activity over weekdays with a small boost on the weekend. These observations align well with the behavior expected from users living in Japan, validating the temporal representation of the corpus procured.</em></p>
 </div>
 
