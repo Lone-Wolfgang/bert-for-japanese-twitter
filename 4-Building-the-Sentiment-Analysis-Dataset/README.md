@@ -83,7 +83,7 @@ The annotation of JTS1k mostly met the original criteria of size, balance, and r
 
 <div align="center">
   <img src="images/annotator-agreement.png" alt="Annotator Agreement" width="300">
-  <p><em>The inter-annotator agreement (left) scored an alpha of 0.57. The agreement of individual labels was calculated by treating the problem as binary. The self-agreement (right) was nearly perfect at 96%, given by repeating over 10% of the total annotations. </em></p>
+  <p><em>The inter-annotator agreement scored an alpha of 0.57. The agreement of individual labels was calculated by treating the problem as binary. The self-agreement was nearly perfect at 96%, given by repeating over 10% of the total annotations. </em></p>
 </div> 
 
 <div align="justify">
@@ -105,7 +105,7 @@ The most confusion arises between the negative and neutral sentiments. This may 
 </div>
 
 <div align="center">
-  <img src="images/example-tweet.png" alt="Negative Tweet with Neutral Language" width="400">
+  <img src="images/example-tweet.png" alt="Negative Tweet with Neutral Language" width="500">
   <p><em>This tweet, critiquing Noda’s party, conveys negative sentiment subtly rather than explicitly. </em></p>
 </div> 
 
