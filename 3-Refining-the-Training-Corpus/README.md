@@ -113,7 +113,7 @@ The review of user samples indicated that deduplication achieved its intended pu
 </div>
 
 <div align="center">
-  <img src="images/table-of-corpora.png" alt="Table of Three training corpora" width="400">
+  <img src="images/table-of-corpora.png" alt="Table of Three training corpora" width="500">
   <p><em>This analysis illustrates the change in user balance over stages of refinement. The relative contributions from users of ten or less tweets significantly increase. From users of more than 1,000, contribution decreases. Almost two thirds of the balanced corpus was from the highest contributors. Therefore, the balanced corpus remains skewed, but it has better representation of lower level contributors.</em></p>
 </div>
 
@@ -128,7 +128,7 @@ Deduplication cut the corpus size from 60 million to 27 million tweets. User bal
 Comparison of the Raw and Deduplicated corpora indicates that deduplication maintained a high level of linguistic diversity. Despite being less than half the size, the Deduplicated corpus retains approximately 75% of the unique n-grams from the Raw corpus.  Conversely, the unique n-grams drop significantly from the Deduplicated to the Balanced corpus.
 
 <div align="center">
-  <img src="images/table-of-ngrams.png" alt="Analysis of N-Grams across Raw and Refined Corpora" width="600">
+  <img src="images/table-of-ngrams.png" alt="Analysis of N-Grams across Raw and Refined Corpora" width="400">
   <p><em>MeCab was used to tokenize the corpora (Kudo et al., 2004). Analysis of n-grams was facilitated by the Python library, NLTK.</em></p>
 </div>
 
