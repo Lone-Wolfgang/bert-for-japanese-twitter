@@ -83,7 +83,6 @@ The annotation of JTS1k mostly met the original criteria of size, balance, and r
 
 <div align="center">
   <img src="images/annotator-agreement.png" alt="Annotator Agreement" width="300">
-  <img src="images/self-agreement.png" alt="Self Agreement" width="300">
   <p><em>The inter-annotator agreement (left) scored an alpha of 0.57. The agreement of individual labels was calculated by treating the problem as binary. The self-agreement (right) was nearly perfect at 96%, given by repeating over 10% of the total annotations. </em></p>
 </div> 
 
