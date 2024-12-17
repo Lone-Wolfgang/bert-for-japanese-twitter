@@ -17,26 +17,26 @@ Japan and Malta have an economic relationship that focuses on technology, touris
 ### Tweets about Pastizzi
 
 <div align="center">
-  <img src="images/positive-pastizzi.png" alt="Positive Tweet about Pastizzi" width="600">
+  <img src="images/positive-pastizzi.png" alt="Positive Tweet about Pastizzi" width="500">
 </div>
 <div align="center">
-  <img src="images/neutral-pastizzi.png" alt="Neutral Tweet about Pastizzi" width="600">
+  <img src="images/neutral-pastizzi.png" alt="Neutral Tweet about Pastizzi" width="500">
 </div>
 <div align="center">
-  <img src="images/negative-pastizzi.png" alt="Negative Tweet about Pastizzi" width="600">
+  <img src="images/negative-pastizzi.png" alt="Negative Tweet about Pastizzi" width="500">
     <p><em>Tweets about pastizzi were mostly positive, but the sentiments range. The Positive tweets commonly mention the snack’s rich ricotta filling and affordability, often reflecting a nostalgic longing to return to Malta for another taste. The Neutral tweets typically present factual observations, such as price and availability, without an enthusiastic endorsement. On the other hand, the Negative tweets highlight frustrations, such as availability issues or unmet expectations. The selected examples demonstrate divergence between general and aspectual sentiment analysis. Each tweet reflects a positive attitude towards pastizzi. The short-term visitor that authored the positive example relished the experience of connecting with a local. The neutral example’s explanation reflects respect for the culture and language. The negative example laments the missed opportunity to enjoy a classic snack pairing.</em></p>
 </div>
 
 ### Tweets about NHK Broadcast on Online Casinos
 
 <div align="center">
-  <img src="images/negative-casino.png" alt="Negative Tweet about Pastizzi" width="600">
+  <img src="images/negative-casino.png" alt="Negative Tweet about Pastizzi" width="500">
 </div>
 <div align="center">
-  <img src="images/neutral-casino.png" alt="Neutral Tweet about Pastizzi" width="600">
+  <img src="images/neutral-casino.png" alt="Neutral Tweet about Pastizzi" width="500">
 </div>
 <div align="center">
-  <img src="images/positive-casino.png" alt="Positive Tweet about Pastizzi" width="600">
+  <img src="images/positive-casino.png" alt="Positive Tweet about Pastizzi" width="500">
     <p><em>Reactions to the NHK broadcast universally condemned online casinos. The Negative tweets focused on concerns over gambling addiction and fraud. Some commentors criticize Malta for enabling the industry. The Neutral offers a more balanced view, focusing on the factual details of NHK’s investigation, underlining the ethical dilemmas and regulatory challenges. The few Positive tweets praised the quality of reporting, expressing gratitude to NHK for educating the public about a little-known problem.</em></p>
 </div>
   
@@ -52,7 +52,7 @@ The sentiment analysis includes four components. The plot below exemplifies the 
 </div>
 
 <div align="center">
-  <img src="images/fukuhara-all-tweets.png" alt="Overview of Tweets about Fukuhara" width="600">
+  <img src="images/fukuhara-all-tweets.png" alt="Overview of Tweets about Fukuhara" width="700">
     <p><em>These tweets were collected by querying Fukuhara’s name in kanji, 福原 愛. The corpus includes 1.2 million tweets from over 500,000 users. Strong positive peaks in the summers of 2012 and 2016 correspond to her Olympic performances. In the spring of 2021, the media exposed her marital problems and began to publish allegations of infidelity. This analysis focuses on public sentiment during this period of scandal, from January to September 2021.</em></p>
 </div>
 
@@ -61,7 +61,7 @@ The sentiment analysis includes four components. The plot below exemplifies the 
 On each target day, tweets are clustered by sentiment, and two analyses are performed. First, emotional intensity scores are averaged and plotted for each sentiment class. If all systems function correctly, emotion and sentiment should align—such as joy and trust for positive sentiment, and disgust and fear for negative sentiment. The second analysis ranks unigrams using a TF-IDF score. The top-ranking terms provide context on the topic and characterize the unique vocabulary from each sentiment class. For qualitative analysis, thirty tweets were sampled for each day and sentiment. The samples were balanced by their dominant emotion to ensure variety. The captions provide context through a comparison of recurring themes by sentiment.
 
 <div align="center">
-  <img src="images/fukuhara-2021-01-17.png" alt="Sentiment on Fukuhara on Jan 17, 2021" width="600">
+  <img src="images/fukuhara-2021-01-17.png" alt="Sentiment on Fukuhara on Jan 17, 2021" width="700">
 </div>
 <div align="center">
   <img src="images/jan-17-1.png" alt="Positive Emotions on Jan 17" width="200">
@@ -74,7 +74,7 @@ On each target day, tweets are clustered by sentiment, and two analyses are perf
 </div>
 
 <div align="center">
-  <img src="images/fukuhara-2021-03-04.png" alt="Sentiment on Fukuhara on Mar 3, 2021" width="600">
+  <img src="images/fukuhara-2021-03-04.png" alt="Sentiment on Fukuhara on Mar 3, 2021" width="700">
 </div>
 <div align="center">
   <img src="images/mar-4-1.png" alt="Negative Emotions on Jan 17" width="200">
@@ -87,7 +87,7 @@ On each target day, tweets are clustered by sentiment, and two analyses are perf
 </div>
 
 <div align="center">
-  <img src="images/fukuhara-2021-07-09.png" alt="Sentiment on Fukuhara on Jul 7, 2021" width="600">
+  <img src="images/fukuhara-2021-07-09.png" alt="Sentiment on Fukuhara on Jul 7, 2021" width="700">
 </div>
 <div align="center">
   <img src="images/jul-9-1.png" alt="Neutral Emotions on Jan 17" width="200">
@@ -100,7 +100,7 @@ On each target day, tweets are clustered by sentiment, and two analyses are perf
 </div>
 
 <div align="center">
-  <img src="images/fukuhara-2021-07-26.png" alt="Sentiment on Fukuhara on Jul 26, 2021" width="600">
+  <img src="images/fukuhara-2021-07-26.png" alt="Sentiment on Fukuhara on Jul 26, 2021" width="700">
 </div>
 <div align="center">
   <img src="images/jul-26-1.png" alt="Positive Emotions on Jan 17" width="200">
@@ -111,4 +111,3 @@ On each target day, tweets are clustered by sentiment, and two analyses are perf
   <img src="images/mar-4-words.png" alt="Distinct terms by sentiment on Mar 4" width="500">
   <p><em> On July 26, 2021, Fukuhara commentated on a dramatic table tennis match at the Tokyo Olympics where Japan won gold. The Positive tweets praise the performance of the winning duo. Many commend Fukuhara, complimenting her enthusiasm and strong presence despite her recent challenges. Overall, they emphasize joy and pride in Japan’s achievement and admiration for Fukuhara. The Neutral tweets are more mixed. Many acknowledge the historic gold medal win, but express discomfort about her presence. While the athletes are celebrated, Fukuhara’s presence tempers their excitement. The Negative tweets focus more on Fukuhara than the event. These tweets are blunt and critical, with some using derogatory language to express their dissatisfaction. They openly discuss her scandals, complain about her presence, and criticize organizers for including her.</em></p>
 </div>
-
