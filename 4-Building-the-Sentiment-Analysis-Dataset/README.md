@@ -202,11 +202,11 @@ This experiment fine-tunes the base and large versions of XLM-T on each dataset.
 </div>
 
 <div align="center">
-  <img src="images/cross-lingual-transfer-1.png" alt="Cross Lingual Transfer within datasets" width="500">
+  <img src="images/cross-lingual-transfer-1.png" alt="Cross Lingual Transfer within datasets" width="400">
 </div>
 
 <div align="center">
-  <img src="images/cross-lingual-transfer-2.png" alt="Cross Lingual Transfer Tweet Sentiment Multilingual" width="800">
+  <img src="images/cross-lingual-transfer-2.png" alt="Cross Lingual Transfer Tweet Sentiment Multilingual" width="600">
   <p><em>Compares the performance of fine-tuned XLM-T on the test splits of experimental datasets and the language splits of TSML. Peak scores are highlighted in bold.</em></p>
 </div> 
 
