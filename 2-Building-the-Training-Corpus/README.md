@@ -47,14 +47,19 @@ To distribute the quota over the desired timespan, a more specific operator was 
     </tr>
   </table>
 </div>
- 
 
-Figure 4.2 Distribution of the Twitter Corpus by Day and Hour
-  
-The hourly plot (left) shows consistent activity from 7:00-21:00 JCT that wanes and waxes across nighttime hours. The daily plot (right) shows activity over weekdays with a small boost on the weekend. These observations align well with the behavior expected from users living in Japan, validating the temporal representation of the corpus procured.
-Figure 4.3 Distribution of the Twitter Corpus by Prefecture
+<div align="center">
+  <img src="images/geo.png" alt="Map of Corpus Contribution" width="800">
+  <p><em>The map categorizes prefectures by percentile rank based on their population and corpus contribution.</em></p>
+</div>
+
+<div align="center">
+  <img src="images/geo.png" alt="Map of Corpus Contribution" width="800">
+  <p><em>The scatter plot illustrates the strength of the relationship between the two. The predicted contribution is given by dividing the size of the corpus by the population of Japan. The relationship is strong, with a Pearson correlation of 0.89. The largest population, Tokyo, is heavily represented. Higher population prefectures in general are better represented, which is further explored in the table that follows.</em></p>
+</div>
+
  
-The sampling method provided detailed geo data. The map (top) categorizes prefectures by percentile rank based on their population and corpus contribution. The scatter plot (bottom) illustrates the strength of the relationship between the two. The predicted contribution is given by dividing the size of the corpus by the population of Japan. The relationship is strong, with a Pearson correlation of 0.89. The largest population, Tokyo, is heavily represented. Higher population prefectures in general are better represented, which is further explored in Table 4.1.
+The scatter plot illustrates the strength of the relationship between the two. The predicted contribution is given by dividing the size of the corpus by the population of Japan. The relationship is strong, with a Pearson correlation of 0.89. The largest population, Tokyo, is heavily represented. Higher population prefectures in general are better represented, which is further explored in Table 4.1.
 Table 4.1 Distribution of the Twitter Corpus by Prefecture
  
 The table displays population and corpus contribution for the top and bottom fifteen prefectures, ranked by population. It calculates a contribution ratio based on these values. Prefectures with larger populations tend to have higher contribution ratios, as evidenced by a Spearman correlation of 0.55. This indicates that Twitter user activity is not only proportionally distributed across different regions but also somewhat concentrated in major urban areas.
