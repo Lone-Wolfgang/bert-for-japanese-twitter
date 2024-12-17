@@ -85,7 +85,7 @@ Deduplication partly balanced the corpus by reducing the influence of outlier us
 </div>
 
 <div align="center">
-  <img src="images/high-duplicate-text-sample.png" alt="Text Sample from User with 99% Duplicate Ratio" width="400">
+  <img src="images/high-duplicate-text-sample.png" alt="Text Sample from User with 99% Duplicate Ratio" width="600">
   <p><em>This user, with a 99% duplicate ratio, generated 31k tweets at a rate of 112 tweets per day, showing minimal language variation. The content predominantly consists of template text using a slot fill mechanism to incorporate names.</em></p>
 </div>
 
@@ -144,7 +144,7 @@ The ratio of unique to total n-grams is the highest in the Balanced corpus. Howe
 </div>
 
 <div align="center">
-  <img src="images/diversity-of-tags.png" alt="Diversity of Hashtags and Mentioned Users across Raw and Refined Corpora" width="400">
+  <img src="images/diversity-of-tags.png" alt="Diversity of Hashtags and Mentioned Users across Raw and Refined Corpora" width="600">
   <p><em>The mentioned users remain consistent, but hashtag diversity increases at every level of refinement. Hashtags are related to the topical content of corpora (Petrović et al., 2010). The increase in hashtag diversity may be a positive signal for the balance of content within the Balanced corpus.</em></p>
 </div>
 
