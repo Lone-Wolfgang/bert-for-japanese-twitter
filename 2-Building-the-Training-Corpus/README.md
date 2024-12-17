@@ -81,21 +81,21 @@ For a balanced corpus, the ideal is to sample a few tweets from as many users as
 
 </div>
 <div align="center">
-  <img src="images/users-by-tweet-volume.png" alt="Example of a template Tweet" width="800">
+  <img src="images/users-by-tweet-volume.png" alt="Histogram of Users by Tweet Volume" width="800">
 </div>
 
 <div align="center">
-  <img src="images/table-of-users.png" alt="Example of a template Tweet" width="400">
+  <img src="images/table-of-users.png" alt="Table of Users by Tweet Volume" width="600">
   <p><em>The corpus includes tweets from approximately 714,000 unique users. Over half of these users contributed ten tweets or less, and almost 90% contributed fewer than 100 tweets. A few outlier users posted more than 10,000 tweets, with the highest number of tweets from a single user being 45,538.. </em></p>
 </div>
 
-Figure 4.5 Distribution of Users by Contribution Volume
- 
- 
-Figure 4.6 Corpus Segmented by Users of Varying Contribution Volume
- 
- 
-The corpus is predominantly made up of contributions from the heaviest users. Those who contributed ten tweets or less accounted for only 2.2% of the corpus. The 10% of users who contributed between 100 and 1,000 tweets represented over a third of the total contributions. Their input is almost matched by the 1.2% of users who contributed between 1,000 and 10,000 tweets. This skewed distribution indicates a significant lack of diversity in user contributions, affecting the representativeness and potential bias of the dataset. ‘Unknown’ tweets were collected with the Twitter Download, which does not provide user data.
+</div>
+<div align="center">
+  <img src="images/raw-corpus-by-tweet-volume.png" alt="Corpus Segmented by Tweet Volume" width="800">
+</div>
 
+<div align="center">
+  <img src="images/table-of-corpus-segments.png" alt="Table of Corpus Segments by Tweet Volume" width="600">
+  <p><em>The corpus is predominantly made up of contributions from the heaviest users. Those who contributed ten tweets or less accounted for only 2.2% of the corpus. The 10% of users who contributed between 100 and 1,000 tweets represented over a third of the total contributions. Their input is almost matched by the 1.2% of users who contributed between 1,000 and 10,000 tweets. This skewed distribution indicates a significant lack of diversity in user contributions, affecting the representativeness and potential bias of the dataset. ‘Unknown’ tweets were collected with the Twitter Downloader web application, which does not provide user data. </em></p>
 </div>
 
