@@ -77,13 +77,13 @@ The annotation of JTS1k mostly met the original criteria of size, balance, and r
 </div>
 
 <div align="center">
-  <img src="images/table-of-balance.png" alt="Size and Balance of JTS1k" width="600">
+  <img src="images/table-of-balance.png" alt="Size and Balance of JTS1k" width="300">
   <p><em>The annotations were consolidated by majority vote. 75 examples were excluded because they did not reach a majority. The dataset is mostly well-balanced, with an approximate label ratio of 1: 1: 1: 0.5. </em></p>
 </div>
 
 <div align="center">
-  <img src="images/annotator-agreement.png" alt="Annotator Agreement" width="600">
-  <img src="images/self-agreement.png" alt="Self Agreement" width="600">
+  <img src="images/annotator-agreement.png" alt="Annotator Agreement" width="300">
+  <img src="images/self-agreement.png" alt="Self Agreement" width="300">
   <p><em>The inter-annotator agreement (left) scored an alpha of 0.57. The agreement of individual labels was calculated by treating the problem as binary. The self-agreement (right) was nearly perfect at 96%, given by repeating over 10% of the total annotations. </em></p>
 </div> 
 
@@ -94,8 +94,8 @@ The alpha scores for individual labels showed varying degrees of disagreement. T
 </div>
 
 <div align="center">
-  <img src="images/annotation-cm-absolute.png" alt="Absolute CM of Annotations" width="600">
-  <img src="images/annotation-cm-relative.png" alt="Relative CM of Annotations" width="600">
+  <img src="images/annotation-cm-absolute.png" alt="Absolute CM of Annotations" width="300">
+  <img src="images/annotation-cm-relative.png" alt="Relative CM of Annotations" width="300">
   <p><em>Comparing the annotations with their majority vote labels provides a clearer picture of the patterns of confusion exhibited by the annotators. </em></p>
 </div> 
    
@@ -106,7 +106,7 @@ The most confusion arises between the negative and neutral sentiments. This may 
 </div>
 
 <div align="center">
-  <img src="images/example-tweet.png" alt="Negative Tweet with Neutral Language" width="600">
+  <img src="images/example-tweet.png" alt="Negative Tweet with Neutral Language" width="400">
   <p><em>This tweet, critiquing Noda’s party, conveys negative sentiment subtly rather than explicitly. </em></p>
 </div> 
 
@@ -121,7 +121,7 @@ The next round of analysis uses the complete JTS1k to benchmark a series of gene
 ## Benchmarking Generative AI Models for Sentiment Classification
 
 <div align="center">
-  <img src="images/table-of-genAI.png" alt="Generative AI Models Evaluated with JTS1k" width="600">
+  <img src="images/table-of-genAI.png" alt="Generative AI Models Evaluated with JTS1k" width="400">
   <p><em>Three groups of GenAI models were evaluated. The Meta Llama models offer insights into how performance is influenced by the number of parameters and enhancements in training data and architecture. The Japanese Llama modes evaluate the benefits of language adaptation. The models by MistralAI, Google, and OpenAI represent state-of-the-art.</em></p>
 </div> 
 
@@ -155,29 +155,29 @@ Further analysis focuses on the specific responses provided by GenAI models. The
 </div>
 
 <div align="center">
-  <img src="images/optimistic-1.png" alt="Llama 2 (7B)" width="300">
-  <img src="images/optimistic-2.png" alt="Llama 3 (8B)" width="300">
-  <img src="images/optimistic-3.png" alt="Mistral (7B)" width="300">
+  <img src="images/optimistic-1.png" alt="Llama 2 (7B)" width="200">
+  <img src="images/optimistic-2.png" alt="Llama 3 (8B)" width="200">
+  <img src="images/optimistic-3.png" alt="Mistral (7B)" width="200">
   <p><em>Likely influenced by a directive to please users, the ‘Optimistic’ models are hesitant to select the negative category and readily choose positive (Buscemi & Proverbio, 2024). This pattern is most prevalent in the smallest Llama 2, which also had the lowest F1 score. The smallest Llama 3 shows significant improvement. Its negative classifications are highly precise, but low in recall. The Mistral model avoided both the negative and the mixed categories.</em></p>
 </div> 
 
 <div align="center">
-  <img src="images/polarized-1.png" alt="Haqishen" width="300">
-  <img src="images/polarized-2.png" alt="Lightblue" width="300">
-  <img src="images/polarized-3.png" alt="Llama 2 (13B)" width="300">
+  <img src="images/polarized-1.png" alt="Haqishen" width="200">
+  <img src="images/polarized-2.png" alt="Lightblue" width="200">
+  <img src="images/polarized-3.png" alt="Llama 2 (13B)" width="200">
   <p><em>The ‘Polarized’ models made accurate predictions about the three main sentiment categories but rejected the mixed class. These included all the Japanese Llamas, which is an interesting development given that the original Llama 3 was overzealous with the mixed category.</em></p>
 </div>
 
 <div align="center">
-  <img src="images/top-1.png" alt="Llama 2 (70B)" width="300">
-  <img src="images/top-2.png" alt="Mixtral MoE" width="300">
-  <img src="images/top-3.png" alt="GPT-3.5-Turbo 2 (13B)" width="300">
+  <img src="images/top-1.png" alt="Llama 2 (70B)" width="200">
+  <img src="images/top-2.png" alt="Mixtral MoE" width="200">
+  <img src="images/top-3.png" alt="GPT-3.5-Turbo 2 (13B)" width="200">
 </div>
 
 <div align="center">
-  <img src="images/top-1.png" alt="Llama 3 (70B)" width="300">
-  <img src="images/top-2.png" alt="Gemini 1.0" width="300">
-  <img src="images/top-3.png" alt="GPT-4" width="300">
+  <img src="images/top-1.png" alt="Llama 3 (70B)" width="200">
+  <img src="images/top-2.png" alt="Gemini 1.0" width="200">
+  <img src="images/top-3.png" alt="GPT-4" width="200">
   <p><em>These models are the most consistent with human responses. There is confusion between neutral and negative, distinction between negative and positive, and mixed is a consistent challenge. Showcasing its superiority, GPT-4 classifies all categories with human-like performance.</em></p>
 </div> 
           
@@ -203,7 +203,7 @@ This experiment fine-tunes the base and large versions of XLM-T on each dataset.
 </div>
 
 <div align="center">
-  <img src="images/cross-lingual-transfer-1.png" alt="Cross Lingual Transfer within datasets" width="400">
+  <img src="images/cross-lingual-transfer-1.png" alt="Cross Lingual Transfer within datasets" width="500">
 </div>
 
 <div align="center">
