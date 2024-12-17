@@ -26,7 +26,7 @@ To distribute the quota over the desired timespan, a more specific operator was 
 ## Corpus Analysis of Time and Place
 
 <div align="center">
-  <img src="images/month.png" alt="Distribution of the Twitter Corpus by Month" width="600">
+  <img src="images/month.png" alt="Distribution of the Twitter Corpus by Month" width="800">
   <p><em>Sampling proceeded from June 2022 to May 2023 and included significant contributions from almost every day of this window. The low volume of tweets collected in November 2022 reflects a learning curve in using the API.</em></p>
 </div>
 
@@ -34,10 +34,10 @@ To distribute the quota over the desired timespan, a more specific operator was 
   <table>
     <tr>
       <td>
-        <img src="images/day.png" alt="Distribution of the Twitter Corpus by Day" width="400">
+        <img src="images/day.png" alt="Distribution of the Twitter Corpus by Day" width="600">
       </td>
       <td>
-        <img src="images/hour.png" alt="Distribution of the Twitter Corpus by Hour" width="400">
+        <img src="images/hour.png" alt="Distribution of the Twitter Corpus by Hour" width="600">
       </td>
     </tr>
     <tr>
