@@ -51,7 +51,7 @@ The hyperparameter problem is simplified by aligning fundamental design elements
 </div>
 
 <div align="center">
-  <img src="images/distribution-by-length.png" alt="Analysis of Token Length Distribution to Determine Max Sequence Length" width="500">
+  <img src="images/distribution-by-length.png" alt="Analysis of Token Length Distribution to Determine Max Sequence Length" width="600">
   <p><em>A histogram of tokenized tweet lengths was used to select an optimal max sequence length of 116.</em></p>
 </div> 
 
@@ -62,17 +62,17 @@ At this stage of the exploration, seven variable hyperparameters were identified
 </div>
 
 <div align="center">
-  <img src="images/exploration-1.png" alt="Exploration with Variable Learning Rate and Weight Decay" width="500">
+  <img src="images/exploration-1.png" alt="Exploration with Variable Learning Rate and Weight Decay" width="600">
   <p><em>Initial studies identified the learning rate and weight decay as high impact. This heatmap suggests an optimal learning rate of 1e-04 with moderate weight decay.</em></p>
 </div>
 
 <div align="center">
-  <img src="images/exploration-2.png" alt="Exploration with Fixed Learning Rate and Fixed Weight Decay" width="500">
+  <img src="images/exploration-2.png" alt="Exploration with Fixed Learning Rate and Fixed Weight Decay" width="600">
   <p><em>With the learning rate fixed, the best results are achieved with a weight decay of 0.3.</em></p>
 </div> 
 
 <div align="center">
-  <img src="images/exploration-3.png" alt="Exploration of Number of Train Epochs" width="500">
+  <img src="images/exploration-3.png" alt="Exploration of Number of Train Epochs" width="700">
   <p><em>The number of train epochs was also significant. Increasing training time invariably yielded better loss, but evaluation by fine-tuning revealed a more complex relationship. This analysis shows that trainability peaks before declining with more train epochs.</em></p>
 </div> 
 
@@ -83,7 +83,7 @@ For the remaining hyperparameters, exploration pointed to a narrow range that te
 </div>
 
 <div align="center">
-  <img src="images/HP-sweep.png" alt="Search Field for Hyperparameter Sweep" width="500">
+  <img src="images/HP-sweep.png" alt="Search Field for Hyperparameter Sweep" width="400">
   <p><em>The search space for the hyperparameter sweep was encapsulated by the values highlighted in bold. The training corpora, Deduplicated (28M) and Balanced (15M), are defined by their size. The number of training epochs was adjusted according to the corpus size. The exploration examined every nth training epoch within the specified range. For beta2 and epsilon, only the default and optimized values were explored. The search for beta1 was more thorough, with greater focus on areas with optimized training epochs.</em></p>
 </div> 
 
@@ -106,12 +106,12 @@ Fine-tuning entails another layer of hyperparameter optimization. Each evaluatio
 </div>
 
 <div align="center">
-  <img src="images/candidate-performance-on-target.png" alt="Comparison of Candidate Models on JTS1k and JTDD" width="500">
+  <img src="images/candidate-performance-on-target.png" alt="Comparison of Candidate Models on JTS1k and JTDD" width="600">
   <p><em>Every dot represents a pre-trained model fine-tuned on JTS1k and JTDD. Accuracy reflects the maximum accuracy across a hundred trial hyperparameter sweep.  These fifty trials minimally outperformed the original Japanese BERT on both tasks. </em></p>
 </div> 
 
 <div align="center">
-  <img src="images/control-performance-on-target.png" alt="Comparison of Candidate and Control Models on JTS1k and JTDD" width="500">
+  <img src="images/control-performance-on-target.png" alt="Comparison of Candidate and Control Models on JTS1k and JTDD" width="400">
   <p><em>Shows the best values from both corpora against the control.</em></p>
 </div> 
 
@@ -136,26 +136,26 @@ Evaluation of masked language models is not straightforward. During the hyperpar
 t-SNE is a dimensionality reduction technique particularly well-suited for the visualization of high-dimensional data (van der Maaten & Hinton, 2008). This technique is useful for visualizing the embedding matrix in an understandable way because it can reveal the underlying structure of the data, showing how different words and characters are grouped based on their semantic relationships. If pre-training was effective, the semantic networks from the original BERT should be maintained. In addition, new elements, like emoji, should cluster meaningfully in embedding space. t-SNE was used to plot CLS embeddings of selected words and characters.
 
 <div align="center">
-  <img src="images/t-SNE-OG-nouns.png" alt="t-SNE Analysis of Common Japanese Nouns, Original" width="500">
+  <img src="images/t-SNE-OG-nouns.png" alt="t-SNE Analysis of Common Japanese Nouns, Original" width="600">
 </div>
 <div align="center">
-  <img src="images/t-SNE-EXP-nouns.png" alt="t-SNE Analysis of Common Japanese Nouns, Experiment" width="500">
+  <img src="images/t-SNE-EXP-nouns.png" alt="t-SNE Analysis of Common Japanese Nouns, Experiment" width="600">
   <p><em>Plots 20 examples from five classes of common nouns. In the original, distinct classes cluster tightly. There seems to be no difference in junior or senior family terms, and fish clusters close to food, which is appropriate. In the Twitter model, clusters are maintained, but they are less distinct. This suggests that adaptation introduced some noise, but the overall structure is intact.</em></p>
 </div>
 
 <div align="center">
-  <img src="images/t-SNE-OG-char.png" alt="t-SNE Analysis of Basic Japanese Characters, Original" width="500">
+  <img src="images/t-SNE-OG-char.png" alt="t-SNE Analysis of Basic Japanese Characters, Original" width="600">
 </div>
 <div align="center">
-  <img src="images/t-SNE-EXP-char.png" alt="t-SNE Analysis of Basic Japanese Characters, Experiment" width="500">
+  <img src="images/t-SNE-EXP-char.png" alt="t-SNE Analysis of Basic Japanese Characters, Experiment" width="600">
   <p><em>Plots the full vocabulary of hiragana and katakana, which cluster separately. The next plot adds fifty randomly selected emoji, which emerges as a distinct class.</em></p>
 </div>
 
 <div align="center">
-  <img src="images/t-SNE-OG-charplus.png" alt="t-SNE Analysis of Extended Japanese Characters, Original" width="500">
+  <img src="images/t-SNE-OG-charplus.png" alt="t-SNE Analysis of Extended Japanese Characters, Original" width="600">
 </div>
 <div align="center">
-  <img src="images/t-SNE-EXP-char.png" alt="t-SNE Analysis of Extended Japanese Characters, Experiment" width="500">
+  <img src="images/t-SNE-EXP-char.png" alt="t-SNE Analysis of Extended Japanese Characters, Experiment" width="600">
   <p><em>The first plots the full vocabulary of hiragana, katakana, and lower case romaji with fifty randomly selected kanji. Hiragana clusters separately, but the other three families mingle. The next plot adds fifty randomly selected emoji. Hiragana maintains its distance and katakana branches of into its own area of embedding space. Emoji cohabits with romaji and kanji.</em></p>
 </div> 
 
@@ -168,7 +168,7 @@ Masked token prediction is challenging to evaluate because traditional metrics l
 The analysis of top-K accuracy compares the predictions by the original and Twitter adapted BERT models on the WRIME dataset, which was sourced from social media (Suzuki et al., 2022). WRIME was chosen because it is large and it aligns with the target domain, but its character set is relatively clean, which reduces bias against the original BERT model. A single token from each of the 30,000 examples was masked. To safeguard against out-of-vocabulary masking, only whole word tokens from the shared vocabulary were masked. 
 
 <div align="center">
-  <img src="images/top-K-WRIME.png" alt="Top-K Accuracy of Masked Token Predictions on WRIME" width="500">
+  <img src="images/top-K-WRIME.png" alt="Top-K Accuracy of Masked Token Predictions on WRIME" width="600">
   <p><em>The Twitter model surpasses the original when evaluated by top-K accuracy of token predictions on WIME. Surprisingly, the top-1 accuracy indicates that the Twitter model perfectly predicted the True token in over 60% of examples. This level of performance was not expected, and it raises questions about the linguistic diversity of social media. A more informative study would consider masked token predictions on a more general corpus. Nevertheless, these results a considered a positive signal.</em></p>
 </div> 
 
