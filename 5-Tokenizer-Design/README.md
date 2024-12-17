@@ -66,7 +66,7 @@ The WordPieceTrainer, when provided with a training corpus, a vocabulary size, a
 ## Analysis of Token Frequency
 
 <div align="center">
-  <img src="images/rank-dedup.png" alt="Token Distribution of the Training Corpora" width="400">
+  <img src="images/table-of-token-distribution.png" alt="Token Distribution of the Training Corpora" width="500">
   <p><em>The original Japanese BERT vocabulary was well optimized for general text. When tokenizing the Twitter corpus, it utilized over 95% of its vocabulary, demonstrating its efficiency in covering standard Japanese language use. However, it struggled with the abundance of non-standard characters found on Twitter, resulting in nearly 3% of tokens being returned as unknown. In contrast, the Twitter-specific tokenizers returned only 0.05% unknown tokens, showing a significant improvement in handling the diverse and informal nature of Twitter text.</em></p>
 </div> 
  
@@ -85,7 +85,7 @@ This section examines the differences in vocabulary between the original Japanes
 </div>
 
 <div align="center">
-  <img src="images/change-by-char-family.png" alt="Change in Vocabulary by Character Family" width="400">
+  <img src="images/change-by-char-family.png" alt="Change in Vocabulary by Character Family" width="500">
   <p><em>The vocabularies of the three tokenizers were classified by their character family. The Special tokens have additional functions. The Twitter model added three Special tokens: [URL], [USER], and ‘\n’ (newline). The Script characters are from languages outside of the target. They usually appear in the context of kaomoji (Bedrick et al., 2012). The Pictographs mostly consists of emoji, but also encompasses decorative elements like dingbats.</em></p>
 </div> 
 
@@ -98,7 +98,7 @@ The analysis continued by classifying the vocabulary based on parts of speech. T
 </div>
 
 <div align="center">
-  <img src="images/change-by-pos.png" alt="Change in Vocabulary by Part of Speech" width="400">
+  <img src="images/change-by-pos.png" alt="Change in Vocabulary by Part of Speech" width="500">
   <p><em>The POS column represents the original tag as given by MeCab. This analysis did not consider subword tokens. The frequencies represent the number of terms that were tagged in at least 10% of contexts. Consequently, many terms were counted across several parts of speech.</em></p>
 </div> 
 
@@ -122,7 +122,7 @@ Many terms were gained across different character families. A significant number
 </div> 
 
 <div align="center">
-  <img src="images/example-noun.png" alt="Noun with Loaded Sentiment" width="400">
+  <img src="images/example-noun.png" alt="Noun with Loaded Sentiment" width="500">
   <p><em>The term びっくり (surprised) expresses emotional intensity and can convey either positive or negative sentiment. In this context, the user is expressing satisfaction with their living situation.</em></p>
 </div> 
 
@@ -148,7 +148,7 @@ Many verbs lost are more formal or literary, such as 遂げ (accomplish) and 治
 </div>
 
 <div align="center">
-  <img src="images/example-verb.png" alt="Verb with Loaded Sentiment" width="400">
+  <img src="images/example-verb.png" alt="Verb with Loaded Sentiment" width="500">
   <p><em>The term つまら is a stative verb that best translates to the adjective, boring.</em></p>
 </div> 
 
@@ -168,7 +168,7 @@ Many of the terms lost are formal or literary, such as 顕著 (remarkable), 厳�
 </div>
 
 <div align="center">
-  <img src="images/example-descriptive.png" alt="Example of a Descriptive Term with Loaded Sentiment" width="400">
+  <img src="images/example-descriptive.png" alt="Example of a Descriptive Term with Loaded Sentiment" width="500">
   <p><em>The figurative onomatopoeia うるうる describes the feeling of tearing up. Normally used to express sadness, this example conveys a positive and moving experience.</em></p>
 </div> 
 
@@ -192,7 +192,7 @@ Most interjections are composed with hiragana. Many convey emotional intensity w
 </div>
 
 <div align="center">
-  <img src="images/example-interjection.png" alt="Example of an Interjection with Loaded Sentiment" width="400">
+  <img src="images/example-interjection.png" alt="Example of an Interjection with Loaded Sentiment" width="500">
   <p><em>こら is diminutive expression used to demand the attention of the addressee. It is often used by parents when scolding their children.</em></p>
 </div> 
 
@@ -240,5 +240,4 @@ The final analysis examines the vocabularies unique to each tokenizer. The table
 
 
  
-
 
